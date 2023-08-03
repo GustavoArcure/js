@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 cadastro</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <h1>Aula 3</h1>
+
+    <form class="primeiro">
+        <p>Cadastro de Notas</p>
+        <p><div class="list">
+            
+           
+           <label for="nome">Nome:</label><br>
+            <input type="text" id="nome">
+        </div>
+        <div class="list">
+           
+            <label for="serie">Série:</label><br>
+            <input type="number" id="idade">
+        </div>
+        <div class="list">
+            
+            <label for="materia">Matéria</label><br>
+            <input type="text" id="materia">
+        </div></p>
+            <p>Bimeste 1:</p>
+            <label for="bimestre1"></label>
+            <input type="number" id="salario">
+            
+            <label for="bimestre2">Bimeste 2:</label>
+            <input type="number" id="salario">
+        
+            <label for="bimestre3">Bimeste 3:</label>
+            <input type="number" id="salario">
+       
+            <label for="bimestre4">Bimeste 4:</label>
+            <input type="number" id="salario">
+        
+            <label for="calcular">Calcular:</label>
+            <input type="number" id="salario">
+       
+            <button onclick="calcular()">Calcular</button>
+        </div></p>
+    </form>
+
+    <h2>Relatório</h2>
+    
+    <div class="ficha">
+        <h2>Cadastro de notas</h2>
+        <table>
+            <tr>
+                <p><th>Nome Completo:</th>
+                <th>Série:</th>
+                <th>Matéria:</th></p>
+                <p><th>bimestre 1</th>
+                <th>bimestre 2</th>
+                <th>bimestre 3</th>
+                <th>Média</th>
+                <th>Situação</th></p>
+            </tr>
+            <tr>
+                <td id="nome1"></td>
+                <td id="serie1"></td>
+                <td id="materia1"></td>
+                <td id="bimestre11"></td>
+                <td id="bimestre22"></td>
+                <td id="bimestre33"></td>
+                <td id="media1"></td>
+                <td id="nome1"></td>
+                <td id="Situacao"></td>
+
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="ficha">
+        <h2>Tabela com Título</h2>
+        <table>
+            <tr>
+                <th>Nome Completo</th>
+                <th>Série</th>
+                <th>Matéria</th>
+                <th>bimestre 1</th>
+                <th>bimestre 2</th>
+                <th>bimestre 3</th>
+                <th>Média</th>
+                <th>Situação</th>
+            </tr>
+            <tr>
+                <td id="nome1"></td>
+                <td id="serie1"></td>
+                <td id="materia1"></td>
+                <td id="bimestre11"></td>
+                <td id="bimestre22"></td>
+                <td id="bimestre33"></td>
+                <td id="media1"></td>
+                <td id="nome1"></td>
+                <td id="Situacao"></td>
+
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script type="text/javascript" src="../cadastro/js/acoes.js"></script>
+</body>
+</html>

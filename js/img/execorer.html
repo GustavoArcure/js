@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+
+    <style>
+        .titulo{
+        color:rgb(255, 255, 255); font-size: 20px; font-weight: bold;
+        }
+        body{text-align: center;
+        }
+        .texto1{
+            color: black;
+
+        }
+
+
+    </style>
+</head>
+<body class="body">
+    <h1>Escolhendo Cores</h1>
+    
+    <p class=titulo id="texto1">Azul é uma cor que significa que ela é azul</p>
+    <p class=titulo id="texto2">Verde é uma cor que significa que ela é Verde</p>
+    <p class=titulo id="texto3">Laranja é uma cor que significa que ela é Laranja</p>
+
+    <button class="btns" id="azul" onclick="azuljs('texto1').innerHTML = 'Azul é uma cor que significa que ela é azul'">Azul</button>
+    <button class="btns" id="verde" onclick="verdejs()">Verde</button>
+    <button class="btns" id="laranja" onclick="laranjajs()">Laranja</button>
+
+    <script>
+
+    let um = document.getElementById("text1");
+    var dois = document.getElementById("texto2");
+    var tres = "AZul é a cor da minha camisa";
+          
+            um.innerHTML = tres;
+
+    function azuljs(){
+    a.style.background = 'blue'
+    a.document.body.classList.add('azul')
+    a.document.body.classList.add('verde','laranja')
+    }
+
+    function azuljs() {
+        changeColor('blue');
+        
+    }         
+    function changeColor(color) {
+                document.body.style.background = color;
+            }
+   
+
+    </script>
+
+
+ 
+
+
+
+
+
+
+
+</html>

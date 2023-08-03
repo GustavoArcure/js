@@ -1,0 +1,55 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title> 
+            Cores
+        </title>
+        <style>
+            body{text-align:center;}
+            h1{font-size: 30px; font-weight: bold;}
+            .paragrafo2{color:rgb(255, 255, 255); font-size: 30px; font-weight: bold;}
+
+        </style>
+
+        
+    </head> 
+
+      
+    <body>
+           
+        <h1 style = "color:rgb(0, 0, 0);" > 
+            Escolhendo a cor e exibindo o seu significado
+        </h1> 
+          
+        <p id = "paragrafo1"></p>     
+        <p id = "paragrafo2"></p>  
+        <p id = "paragrafo3"></p>  
+          
+        <button onclick = "botaoazul()">Azul</button>
+        <button onclick = "botaoverde()">Verde</button>
+        <button onclick = "botaolaranja()">Laranja</button>
+          
+        <p id = "paragrafo2" style =
+            "color:rgb(255, 255, 255); font-size: 30px; font-weight: bold;">
+        </p>
+          
+        <script>
+            var um = document.getElementById("paragrafo1");
+            var dois = document.getElementById("paragrafo2");
+            
+          
+            function corazul(color) {
+                document.body.style.background = color;
+            }
+              
+            function botaoazul() {
+                corazul('blue');
+                dois.innerHTML = "Azul é a cor do mar";
+               
+            }    
+            
+            
+
+        </script> 
+    </body> 
+</html>      

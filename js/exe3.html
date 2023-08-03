@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Váriaveis</title>
+</head>
+<body>
+    <h1>Isso é JavaScript</h1>
+    <script>
+"use strict";
+//Declarar as váriáveis
+
+var curso = "Desenvolvedor Front-end, "
+var curso1 = "Desenvolvedor Back-end, "
+var data = new Date() // Instanciando as funções.
+var dia = data.getDate()
+var mes = data.getMonth()+1
+var ano = data.getFullYear()
+var horario = data.getMilliseconds()
+//var dataCompleta = dia+"/0"+mes+"/"+ano 
+var dataCompletaSimplificada = data.toLocaleDateString()
+
+var nome = "<b>Gustavo</b>"
+var idade = "23 anos"
+console.log("Hoje é dia:"+dia)
+console.log("Hoje é o mês:"+mes)
+
+
+
+//alert('Funcionou') pode ser utilizado para a verificação do código
+document.write(curso+ curso1+ dataCompletaSimplificada+"."+"<br>");
+
+
+document.write("Olá, meu nome é " + nome  + ", tenho "+idade+ " e hoje é dia "+dataCompletaSimplificada+".")
+
+
+
+    </script>
+    
+</body>
+</html>

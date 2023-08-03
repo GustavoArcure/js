@@ -1,0 +1,77 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title> 
+            Cores
+        </title>
+      <style>
+      body{text-align:center;}
+      
+      h1{font-size: 35px; color: black;}
+      
+      p{color: blue; font-size: 50px; font-weight: bold;}
+      
+      button{width:90px; height: 90px; border-color: black; border-radius: 15px; font-size: 13px;}
+      
+      #blue{background: #8889FF; color: white; }
+      
+      #green{background: #95B963; color: white; }
+      
+      #orange{background: #FF6400; color: white; }
+      
+      #divTeste{height: 40px; font-weight: bold; color: white; font-size: 18px;}
+      
+      
+      </style>
+      
+    </head> 
+      
+    <body>
+           
+        <h1> 
+            Atividade dificil de cores
+        </h1> 
+      
+      <br>
+          
+        
+<div id="divTeste"> </div>
+      
+      <br>
+      <br>
+      
+      
+      <button id="blue" onclick='Textoazu()'>Azul</button>
+
+      <button id="green" onclick='Textover()'>Verde</button>
+
+      <button id="orange" onclick='Textolar()'>Orange</button>
+
+          
+        
+      
+      
+      
+        <script>
+            
+            function cor(color) {
+                document.body.style.background = color;
+            }
+      
+      
+            function Textoazu() {
+              document.getElementById('divTeste').innerHTML = 'Azul cor de blueberry.';
+              cor('blue');}
+      
+            function Textover() {
+              document.getElementById('divTeste').innerHTML = 'Verde cor de musgo.'
+              cor('green');}
+      
+            function Textolar() {
+                 document.getElementById('divTeste').innerHTML = 'Laranja cor de laranja (a fruta).'
+                 cor('orange');}
+      
+      
+        </script> 
+    </body> 
+</html>          

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com funções</title>
+    <style>
+        div#area{
+            font: normal;
+            background-color: blueviolet;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseout="sair()" onmouseenter="entrar()">
+        Interaja...
+
+    </div>
+
+
+
+
+    <h1><b>Acente a Lampada</b></h1>
+    <p><img id="acesa" onclick="quebrada()" onmouseout="acesa()" onmouseenter="apaga()" src="../img/apagada.jpeg"></p>
+
+    <script>
+    
+        let b = window.document.getElementById('acesa')
+
+        function quebrada(){
+            b.src='../img/quebrada.jpg'
+        }
+
+        function acesa(){
+            b.src='../img/apagada.jpeg'
+        }
+        
+        function apaga(){
+            b.src='../img/luz.jpeg'  
+        }
+
+        
+
+    //var uma = 1 //não altera
+        //let dois = 2 //não altera
+        //const tres = 3 // valor não deve ser alterado
+
+        let a = window.document.getElementById('area')
+
+        function clicar(){
+            a.innerText = 'Clicou!'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        
+        }
+
+        function entrar(){
+            a.innerText = 'Entrou!'
+            a.style.fontFamily = 'courier nwe'
+            a.style.background = 'blue'
+
+        }
+        
+        function sair(){
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+            
+        }
+
+
+        a.addEventListener(click, clicar) //para deixar o HTML mais limpo, o processo ocorre apenas no JS.
+    </script>
+    
+</body>
+</html>

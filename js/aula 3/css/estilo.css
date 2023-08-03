@@ -1,0 +1,35 @@
+
+
+button{
+    border: 1px solid #24a765;
+    background-color: #278d46;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: .9;
+}
+
+form div{margin: 5px;
+
+
+}
+
+form{
+border: solid 3px black;
+
+
+
+}
+
+.ficha{
+    border: solid 3px black;
+    
+    
+    
+    }
+
+    #list{display: flex;
+        }
