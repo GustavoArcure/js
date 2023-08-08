@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio dificil
+
+    </title>
+</head>
+<body>
+
+    <p id="para">.</p>
+    <p id="corpo">.</p>
+    
+</body>
+<script>
+let dataano = parseInt (prompt("Coloque o ano do seu nasc.:"))
+let ano = 2023
+
+let anos = (dataano - ano)
+
+let idade = anos + "."
+
+
+
+
+document.write(idade)
+
+
+
+if(idade < 3){
+    console.log("Bebê.")
+    document.getElementById('para').innerHTML = "Bebê."
+    document.getElementById('corpo').innerHTML = idade
+
+}
+
+else if(idade < 5 ){
+    console.log("Criança.")
+    document.getElementById('para').innerHTML = "Criança."
+    document.getElementById('corpo').innerHTML = idade
+  
+    }
+
+    else if(media < 7){
+    console.log("Regular.")
+    document.getElementById('para').innerHTML = "Regular"
+    document.getElementById('corpo').innerHTML = idade
+  
+    }
+
+    else if(media < 9){
+    console.log("Tá boa hein.")
+    document.getElementById('para').innerHTML = "Tá boa hein."
+    document.getElementById('corpo').innerHTML = idade
+    }
+
+ else {
+    console.log("Tá Ótima!!!!.")
+    document.getElementById('para').innerHTML = "Tá Ótima!!!!"
+    document.getElementById('corpo').innerHTML = idade
+}
+
+
+
+
+
+</script>
+</html>
